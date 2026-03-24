@@ -1,0 +1,13 @@
+{
+	"manifest_version": 3,
+	"name": "Twitter to XCancel Rewriter",
+	"version": "1.0",
+	"description": "Changes twitter.com/x.com links to xcancel.com",
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["content.js"],
+			"run_at": "document_idle"
+		}
+	]
+} 
